@@ -12,7 +12,7 @@ public class StatusController {
 
     @GetMapping("/health")
     public Health health() {
-        return new Health("UP", Instant.now());
+        return new Health("UP", Instant.now())
     }
 
     @GetMapping("/hello")
